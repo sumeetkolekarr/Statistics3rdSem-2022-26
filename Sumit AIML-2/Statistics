@@ -1,1 +1,90 @@
+# Seperating DataTypes
+import pandas as pd
+df = pd.read_csv("imdb-spider-man-reviews.csv")
 
+Anim = df.loc[df['Movie'] == 'Spider-Man: Into the Spider-Verse']
+Real = df.loc[df['Movie'] == 'Spider-Man']
+
+Anim.to_csv("SpiderVerse.csv")
+Real.to_csv("SpiderMan.csv")
+
+# SpiderMan
+import pandas as pd
+df = pd.read_csv("SpiderMan.csv")
+
+Stat = [df['Rating']]
+
+d = pd.DataFrame(Stat)
+# print(df.describe())
+print("Median is",df['Rating'].quantile(0.5))
+a = (df['Rating'].quantile(0.25))
+b = (df['Rating'].quantile(0.75))
+c = b - a
+print("The IQR is", c)
+
+#SpiderMan
+
+import pandas as pd
+df = pd.read_csv("SpiderMan.csv")
+
+A = (df['Rating'] == 1.0).sum()
+B = (df['Rating'] == 2.0).sum()
+C = (df['Rating'] == 3.0).sum()
+D = (df['Rating'] == 4.0).sum()
+E = (df['Rating'] == 5.0).sum()
+F = (df['Rating'] == 6.0).sum()
+G = (df['Rating'] == 7.0).sum()
+H = (df['Rating'] == 8.0).sum()
+I = (df['Rating'] == 9.0).sum()
+J = (df['Rating'] == 10.0).sum()
+
+print(f"The No. of 1.0 Rating is {A}")
+print(f"The No. of 2.0 Rating is {B}")
+print(f"The No. of 3.0 Rating is {C}")
+print(f"The No. of 4.0 Rating is {D}")
+print(f"The No. of 5.0 Rating is {E}")
+print(f"The No. of 6.0 Rating is {F}")
+print(f"The No. of 7.0 Rating is {G}")
+print(f"The No. of 8.0 Rating is {H}")
+print(f"The No. of 9.0 Rating is {I}")
+print(f"The No. of 10.0 Rating is {J}")
+
+#SpiderVerse
+import pandas as pd
+df = pd.read_csv("SpiderVerse.csv")
+
+Stat = [df['Rating']]
+
+# print(df.describe())
+print("The Median is",df['Rating'].quantile(0.5))
+
+a = (df['Rating'].quantile(0.25))
+b = (df['Rating'].quantile(0.75))
+c = b - a
+print("The IQR is", c)
+
+import pandas as pd
+df = pd.read_csv("SpiderVerse.csv")
+
+# Frequency Distribution
+A = (df['Rating'] == 1.0).sum()
+B = (df['Rating'] == 2.0).sum()
+C = (df['Rating'] == 3.0).sum()
+D = (df['Rating'] == 4.0).sum()
+E = (df['Rating'] == 5.0).sum()
+F = (df['Rating'] == 6.0).sum()
+G = (df['Rating'] == 7.0).sum()
+H = (df['Rating'] == 8.0).sum()
+I = (df['Rating'] == 9.0).sum()
+J = (df['Rating'] == 10.0).sum()
+
+print(f"The No. of 1.0 Rating is {A}")
+print(f"The No. of 2.0 Rating is {B}")
+print(f"The No. of 3.0 Rating is {C}")
+print(f"The No. of 4.0 Rating is {D}")
+print(f"The No. of 5.0 Rating is {E}")
+print(f"The No. of 6.0 Rating is {F}")
+print(f"The No. of 7.0 Rating is {G}")
+print(f"The No. of 8.0 Rating is {H}")
+print(f"The No. of 9.0 Rating is {I}")
+print(f"The No. of 10.0 Rating is {J}")
