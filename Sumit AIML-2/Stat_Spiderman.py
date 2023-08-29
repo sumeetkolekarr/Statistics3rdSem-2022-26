@@ -1,5 +1,5 @@
 import pandas as pd
-df = pd.read_csv("SpiderVerse.csv")
+df = pd.read_csv("SpiderMan.csv")
 
 
 A = (df['Rating'] == 1.0).sum()
