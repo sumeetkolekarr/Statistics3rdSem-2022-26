@@ -1,0 +1,7 @@
+ASSIGNMENT: Calculation of mean and median and comparing them with IMDB rating.
+For this assignment I took 2 movies which has remake. The original movie is Charlie a Malayalam movie released in year 2015 and the remake movie is Maara a tamil movie which is released in 2021.Then I created a data sets of ratings of both the movies and calculated the mean and median of reviews of both the movies. 
+1)The mean I calculated is same as the unweighted mean mentioned in the IMDB website and the overall rating given by the IMDB website is more accurate to the mean than the median I calculated for both the movies which I took into consideration.
+2)The original movie got more craze and rating when compared to the remake movie. And the voter distribution is also more for the original film than the remake movie. I think median is a good measure for calculating the ratings of the movie.
+3)The rating of original movie is better than remake movie because it is remake since it got hit with good story and the audience will have stronger feelings towards the original film like curiosity, nostalgia etc
+4)Remake movies won’t get that attention as the original film, people try to compare the remake movie with the original which tend to disappoint and lower the movie ratings. 
+5)This is why the rating of the movies differ by each other.
